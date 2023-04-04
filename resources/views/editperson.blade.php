@@ -1,13 +1,16 @@
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
 <head>
-    <title>Add Person</title>
+    <title>Edit Person</title>
     <link type="text/css" rel="stylesheet" href="{{ URL::asset('css/arkusz.css') }}"}/>
 </head>
 <body>
-    <div>
-        <form method="POST" action="{{ config('app.url')}}/persons">
-            <h1> Enter Details to add Person</h1>
+    <div class>
+        <form method="POST" action="{{ url('update-person/'.$myPerson->numbers) }}">
+            @csrf
+            @method('PUT')
+
+            <h1> Enter Details to Update Person</h1>
             <div>
                 <label>Name &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label> <input type="text" name="name">
             </div>
@@ -24,17 +27,16 @@
                 <label>Description</label> <input type="text" name="description">
             </div>
 
-            <button type="submit">Submit &nbsp;</button>
+            <button type="submit">Update</button>
         </form>
 
-         <div>
-         <h1>
-         </h1>
-         <a href="{{ config('app.url')}}/persons" class="links2">View List</a>
-         </div>
+        <div>
+        <h1>
+        </h1>
+        <a href="{{ config('app.url')}}/persons" class="links2">View List</a>
+        </div>
 
     </div>
-
 </body>
 </html>
 

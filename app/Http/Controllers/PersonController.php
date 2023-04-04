@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Person;
 use Illuminate\Http\Request;
 
 class PersonController extends Controller
@@ -50,24 +51,62 @@ class PersonController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit($person_numbers)
     {
-        //
+        $myPerson = Person::where('numbers', $person_numbers)->first();
+
+        return view('editperson', compact('myPerson'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, $person_numbers)
     {
-        //
+
+        //dd($request->get("person->name"));
+        //dd($request);
+        //dd($person_numbers);
+
+        //$data = $request->validated();
+
+        $myPerson = Person::where('numbers', $person_numbers)->first();
+
+        $myPerson->update([
+             'name' => $request->get('name'),
+             'surname' => $request->get('surname'),
+             'numbers' => $request->get('numbers'),
+             'description' => $request->get('description'),
+        ]);
+
+// $myPerson = Person::where('numbers', $person_numbers)->first();
+//         $myPerson->name = $request->input('name');
+//         $myPerson->surname = $request->input('surname');
+//         $myPerson->numbers = $request->input('numbers');
+//         $myPerson->description = $request->input('description');
+//         $myPerson->update();
+//
+//         //dd($myPerson);
+
+        return redirect('/persons');
+
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy($person_numbers)
     {
-        //
+
+
+        $myPerson = Person::where('numbers', $person_numbers)->first();
+
+        //$rekordy = Person::all();
+
+        //dd($myPerson);
+        //dd($rekordy);
+
+        $myPerson->delete();
+        return redirect('/persons');
     }
 }
