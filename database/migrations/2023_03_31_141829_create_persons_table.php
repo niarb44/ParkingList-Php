@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Schema;
                 $table->increments('id');
                 $table->string('name');
                 $table->string('surname');
-                $table->integer('numbers');
+                $table->string('numbers');
                 $table->text('description');
                 $table->softDeletes();
                 $table->timestamps();
