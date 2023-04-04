@@ -1,34 +1,40 @@
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
 <head>
-    <title>Create Product | Product Store</title>
-    <!-- styling etc. -->
+    <title>Add Person</title>
+    <link type="text/css" rel="stylesheet" href="{{ URL::asset('css/arkusz.css') }}"}/>
 </head>
 <body>
-<div class="flex-center position-ref full-height">
-    <div class="content">
+    <div>
         <form method="POST" action="{{ config('app.url')}}/persons">
-            <h1> Enter Details to create a product</h1>
-            <div class="form-input">
-                <label>Name</label> <input type="text" name="name">
+            <h1> Enter Details to add Person</h1>
+            <div>
+                <label>Name &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label> <input type="text" name="name">
             </div>
 
-            <div class="form-input">
-                <label>Surname</label> <input type="text" name="surname">
+            <div>
+                <label>Surname &nbsp&nbsp&nbsp</label> <input type="text" style="width: 291px;" name="surname">
             </div>
 
-            <div class="form-input">
-                <label>Numbers</label> <input type="number" name="numbers">
+            <div>
+                <label>Numbers &nbsp&nbsp&nbsp</label> <input type="number" name="numbers">
             </div>
 
-            <div class="form-input">
+            <div>
                 <label>Description</label> <input type="text" name="description">
             </div>
 
-            <button type="submit">Submit</button>
+            <button type="submit">Submit &nbsp;</button>
         </form>
+
+         <div>
+         <h1>
+         </h1>
+         <a href="{{ config('app.url')}}/persons" class="links2">View List</a>
+         </div>
+
     </div>
-</div>
+
 </body>
 </html>
 
