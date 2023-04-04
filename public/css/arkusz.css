@@ -1,0 +1,18 @@
+
+.content{
+    text-align: center;
+}
+.title{
+    font-size: 70px;
+}
+.links{
+    font-size: 40px;
+    color: red;
+}
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+
+    background-image: url("gradient.jpg");
+}

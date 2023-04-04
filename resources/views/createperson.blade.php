@@ -1,34 +1,32 @@
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
 <head>
-    <title>Create Product | Product Store</title>
-    <!-- styling etc. -->
+    <title>Add Person</title>
+    <link type="text/css" rel="stylesheet" href="{{ URL::asset('css/arkusz.css') }}"}/>
 </head>
 <body>
-<div class="flex-center position-ref full-height">
-    <div class="content">
+    <div class>
         <form method="POST" action="{{ config('app.url')}}/persons">
-            <h1> Enter Details to create a product</h1>
-            <div class="form-input">
+            <h1> Enter Details to add Person</h1>
+            <div>
                 <label>Name</label> <input type="text" name="name">
             </div>
 
-            <div class="form-input">
+            <div>
                 <label>Surname</label> <input type="text" name="surname">
             </div>
 
-            <div class="form-input">
+            <div>
                 <label>Numbers</label> <input type="number" name="numbers">
             </div>
 
-            <div class="form-input">
+            <div>
                 <label>Description</label> <input type="text" name="description">
             </div>
 
             <button type="submit">Submit</button>
         </form>
     </div>
-</div>
 </body>
 </html>
 
