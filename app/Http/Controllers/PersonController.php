@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Person;
 use Illuminate\Http\Request;
 
 class PersonController extends Controller
@@ -66,8 +67,18 @@ class PersonController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy($person_numbers)
     {
-        //
+
+
+        $myPerson = Person::where('numbers', $person_numbers)->first();
+
+        $rekordy = Person::all();
+
+        //dd($myPerson);
+        //dd($rekordy);
+
+        $myPerson->delete();
+        return redirect('/persons');
     }
 }

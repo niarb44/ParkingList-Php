@@ -21,3 +21,4 @@ Route::get('/', function () {
 Route::get('/persons', [PersonController::class, 'index']);
 Route::get('/persons/create', [PersonController::class, 'create']);
 Route::post('/persons', [PersonController::class, 'store']);
+Route::delete('delete-person/{person_numbers}',  [PersonController::class, 'destroy']);
