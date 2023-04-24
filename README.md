@@ -1,0 +1,39 @@
+ENG:
+
+Web Application for Managing the Parking List.
+
+It is a CRUD web application written in PHP with the help of Laravel for managing the parking list. 
+With this application, users can add, delete, edit the entries of people in the parking list.
+
+Usage: After launching the application, users will see a selection window - add a new user or display a list of people.
+In the adding window, you can enter such data as: name, surname, car registration numbers, additional description.
+After displaying the list of people, it is possible to delete a given record or edition.
+
+Features: This parking list management app includes the following features:
+
+- Adding new people and car details
+- Display of the current state of the list
+- Edit existing records
+- Delete existing records
+
+Contact: If you have any questions or issues, please contact the project maintainers at dawid.golebowski@student.wab.edu.pl .
+
+PL:
+
+Aplikacja webowa do Zarządzania Listą Parkingową.
+
+Jest to aplikacja webowa CRUD napisana w PHP z pomocą Laravel służąca do zarządzania listą parkingową. 
+Dzięki tej aplikacji użytkownicy mogą dodawać, usuwać, edytować wpisy osób na liście parkingowej.
+
+Korzystanie: Po uruchomieniu aplikacji, użytkownicy zobaczą okno wyboru - dodanie nowego użykownika lub wyświetlenie listy osób. 
+W oknie dodawania możemy wprowadzic takie dane jak: imię, naziwsko, numery rejestracyjne samochodu, dodatkowy opis. 
+Po wyświetleniu listy osób jest możliwość usunięcia danego rekodu lub edycji.
+
+Funkcje: Ta aplikacja do zarządzania listą parkingową zawiera następujące funkcje:
+
+- Dodawanie nowych osób i danych samochodu
+- Wyświetlenie obecnego stanu listy
+- Edycja istniejących rekordów
+- Usuwanie istniejących rekordów
+
+Kontakt: Jeśli masz jakieś pytania lub problemy, skontaktuj się z opiekunami projektu pod adresem dawid.golebowski@student.wab.edu.pl .
