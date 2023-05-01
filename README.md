@@ -16,9 +16,9 @@ Features: This parking list management app includes the following features:
 - Edit existing records
 - Delete existing records
 
-Requirements :
-PHP
-Composer
+Requirements:
+- PHP
+- Composer
 
 Instructions:
 
