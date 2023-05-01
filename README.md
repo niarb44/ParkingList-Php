@@ -36,9 +36,12 @@ Funkcje: Ta aplikacja do zarządzania listą parkingową zawiera następujące f
 - Edycja istniejących rekordów
 - Usuwanie istniejących rekordów
 
+
 Wymagania:
 - PHP
 - Composer
+
+
 
 Instrukcje uruchomienia:
 
@@ -61,5 +64,7 @@ Instrukcje uruchomienia:
 9.Uruchom lokalny serwer.
 
 Zaawansowane ustawienia i dodatkowe informacje można znaleźć w dokumentacji Laravel lub w dokumentacji narzędzi używanych w projekcie, takich jak PHP i Composer.
+
+
 
 Kontakt: Jeśli masz jakieś pytania lub problemy, skontaktuj się z opiekunami projektu pod adresem dawid.golebowski@student.wab.edu.pl .
