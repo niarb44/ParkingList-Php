@@ -37,9 +37,8 @@ Funkcje: Ta aplikacja do zarządzania listą parkingową zawiera następujące f
 - Usuwanie istniejących rekordów
 
 Wymagania:
-- PHP (7.4 lub nowsza wersja)
+- PHP
 - Composer
-- Baza danych (np. MySQL, PostgreSQL, SQLite)
 
 Instrukcje uruchomienia:
 1.Sklonuj repozytorium projektu lub pobierz archiwum ZIP i rozpakuj je.
@@ -47,7 +46,7 @@ Instrukcje uruchomienia:
 3.Zainstaluj zależności przy użyciu Composera.
 4.Skopiuj .env.example jako .env.
 5.Wygeneruj klucz aplikacji Laravel.
-6.Skonfiguruj ustawienia bazy danych w pliku .env.
+6.Skonfiguruj ustawienia bazy danych w pliku .env. (sqlite)
 7.Wykonaj migracje, aby utworzyć tabele w bazie danych.
 8.Opcjonalnie, wykonaj seeder, aby zasilić bazę danych przykładowymi danymi.
 9.Uruchom lokalny serwer.
