@@ -16,6 +16,32 @@ Features: This parking list management app includes the following features:
 - Edit existing records
 - Delete existing records
 
+Requirements :
+PHP
+Composer
+
+Instructions:
+
+1. Clone the project repository or download the ZIP archive and extract it.
+
+2. Navigate to the project directory.
+
+3. Install dependencies using Composer.
+
+4. Copy .env.example to .env.
+
+5. Generate a Laravel application key.
+
+6. Configure the database settings in the .env file. (sqlite)
+
+7. Configure the database settings in the .env file.
+
+8. Optionally, run seeders to populate the database with sample data.
+
+9. Start the local server. 
+
+For advanced settings and additional information, refer to the Laravel documentation or the documentation of the tools used in the project, such as PHP and Composer.
+
 Contact: If you have any questions or issues, please contact the project maintainers at dawid.golebowski@student.wab.edu.pl .
 
 PL:
