@@ -42,14 +42,23 @@ Wymagania:
 
 Instrukcje uruchomienia:
 1.Sklonuj repozytorium projektu lub pobierz archiwum ZIP i rozpakuj je.
+
 2.Przejdź do katalogu projektu.
+
 3.Zainstaluj zależności przy użyciu Composera.
+
 4.Skopiuj .env.example jako .env.
+
 5.Wygeneruj klucz aplikacji Laravel.
+
 6.Skonfiguruj ustawienia bazy danych w pliku .env. (sqlite)
+
 7.Wykonaj migracje, aby utworzyć tabele w bazie danych.
+
 8.Opcjonalnie, wykonaj seeder, aby zasilić bazę danych przykładowymi danymi.
+
 9.Uruchom lokalny serwer.
+
 Zaawansowane ustawienia i dodatkowe informacje można znaleźć w dokumentacji Laravel lub w dokumentacji narzędzi używanych w projekcie, takich jak PHP i Composer.
 
 Kontakt: Jeśli masz jakieś pytania lub problemy, skontaktuj się z opiekunami projektu pod adresem dawid.golebowski@student.wab.edu.pl .
