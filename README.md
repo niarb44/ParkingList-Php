@@ -41,6 +41,7 @@ Wymagania:
 - Composer
 
 Instrukcje uruchomienia:
+
 1.Sklonuj repozytorium projektu lub pobierz archiwum ZIP i rozpakuj je.
 
 2.Przejdź do katalogu projektu.
